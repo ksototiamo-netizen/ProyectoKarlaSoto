@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Traveler's Registry</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#">
+                <img src="assets/logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Lore</a></li>
+                <li><a href="#">Hoyolab</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <img src="assets/logo.png" alt="Imagen principal" class="main-image">
+        <h2>¡WELCOME!</h2>
+        <p>Busca a tu personaje</p>
+
+        <section class="search-box">
+            <div class="search-container">
+                <input
+                   type="text"
+                   id="search-input"
+                   placeholder="BUSCAR PERSONAJE (ej. Skirk, Zhongli,)..."
+                >
+                <button id="search-btn" class="search-icon">🔍</button>
+            </div>
+
+            <div class="elemental-filters">
+                <button class="anemo-btn" data-element="anemo" title="Anemo">
+                    <img src="assets/anemo.png" alt="Anemo">
+                </button>
+                <button class="geo-btn" data-element="geo" title="Geo">
+                    <img src="assets/geo.png" alt="Geo">
+                </button>
+                <button class="electro-btn" data-element="electro" title="Electro">
+                    <img src="assets/electro.png" alt="Electro">
+                </button>
+                <button class="dendro-btn" data-element="dendro" title="Dendro">
+                    <img src="assets/dendro.png" alt="Dendro">
+                </button>
+                <button class="hydro-btn" data-element="hydro" title="Hydro">
+                    <img src="assets/hydro.png" alt="Hydro">
+                </button>
+                <button class="pyro-btn" data-element="pyro" title="Pyro">
+                    <img src="assets/pyro.png" alt="Pyro">
+                </button>
+                <button class="cryo-btn" data-element="cryo" title="Cryo">
+                    <img src="assets/cryo.png" alt="Cryo">
+                </button>
+            </div>
+        </section>
+    </main>
+    <script src="../src/js/app.js"></script>
+</body>
+</html>

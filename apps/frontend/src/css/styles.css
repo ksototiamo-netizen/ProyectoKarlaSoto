@@ -1,0 +1,109 @@
+.header {
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    height: 100px;
+    display: block;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    padding: 0;
+    grid-gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #61bdf6;
+}
+
+.main-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-image: url('../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 10px;
+    padding: 0;
+}
+
+main {
+    color: white;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+    justify-items: center;
+}
+
+.search-box {
+    background: rgba(16, 24, 40, 0.75);
+    border: 1px solid #c8a760;
+    border-radius: 12px;
+    padding: 30px 40px;
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+
+}
+
+.search-container input{
+    width: 100%;
+    padding: 12px 45px 12px 20px;
+    background-color: rgba(10, 15, 26, 0.8);
+    border-radius: 25px;
+    border: 1px solid #728197;
+    color: #fff;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-container input:focus {
+    border-color: #e2c074;
+}
+
+.search-container input:placeholder {
+    color: #8c9ba8;
+    font-size: 0.85rem;
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    border: none;
+    background: none;
+    color: #c8a760;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.ele
