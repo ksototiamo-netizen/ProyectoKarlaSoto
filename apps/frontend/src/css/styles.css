@@ -1,13 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1a1c23;
+    color: #e0e0e0;
+    min-height: 100vh;
+}
+
 .header {
-    background-color: none;
+    background-color: #1a1c23;
+    border-bottom: 3px solid #c8a051;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    display:flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .logo img{
     height: 100px;
     display: block;
+}
+
+.logo h1{
+    font-size: 1.4rem;
+    color: #d3bc8e;
+    letter-spacing: 1px;
 }
 
 .nav ul {
@@ -37,99 +64,112 @@
     height: auto;
 }
 
-body {
-    background-image: url('../assets/background.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 100vh;
-    margin: 10px;
-    padding: 0;
-}
-
-main {
-    color: white;
-    font-family: Arial, sans-serif;
-    margin-top: 50px;
-    justify-items: center;
-}
-
-.search-box {
-    background: rgba(16, 24, 40, 0.75);
-    border: 1px solid #c8a760;
-    border-radius: 12px;
-    padding: 30px 40px;
-    width: 100%;
-    max-width: 650px;
-    text-align: center;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(8px);
-}
-
-.search-container {
-    position: relative;
+.main-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 25px;
-
+    padding: 2rem;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.search-container input{
+.card-section{
+    background-color: #252836;
+    border: 1px solid #3b3f54;
+    border-radius: 8px;
+    padding: 1.5rem;
     width: 100%;
-    padding: 12px 45px 12px 20px;
-    background-color: rgba(10, 15, 26, 0.8);
-    border-radius: 25px;
-    border: 1px solid #728197;
-    color: #fff;
+    box-shadow: 0 4px 10 px rgba(0, 0, 0, 0.3);
+}
+
+.card-section h2{
+    color: #c8a051;
+    margin-bottom: 0.5rem;
+}
+
+.card-section p{
+    margin-bottom: 1rem;
+    color: #a0a5ba;
+}
+
+.form-traveler{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.form-group label{
+    color: #d1d5db;
     font-size: 0.9rem;
-    outline: none;
-    transition: border-color 0.3s;
 }
 
-.search-container input:focus {
-    border-color: #e2c074;
-}
-
-.search-container input:placeholder {
-    color: #8c9ba8;
-    font-size: 0.85rem;
-}
-
-.search-icon {
-    position: absolute;
-    right: 15px;
-    border: none;
-    background: none;
-    color: #c8a760;
-    cursor: pointer;
+.form-group input{
+    padding: 0.6rem;
+    border-radius: 4px;
+    border: 1px solid #3b3f54;
+    color: black;
     font-size: 1rem;
 }
 
-.elemental-filters{
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    flex-wrap: wrap;
-    margin-top: 20px;
+.form-group input:focus{
+    outline: none;
+    border-color: #c8a051;
 }
 
-.elemental-filters button {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    border: 1px solid rgba(200, 167, 96, 0.4);
-    background: rgba(15, 23, 42, 0.85);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.btn-re {
+    background-color: #c8a051;
+    color: #1a1c23;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 4px;
+    font-weight: bold;
     cursor: pointer;
-    padding: 6px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
-.elemental-filters button img {
+.btn-re:hover{
+    background-color: #e5b863;
+}
+
+.search-container {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
-    pointer-events: none;
+    max-width: 400px;
+    margin-top: 1rem;
+}
+
+.grid-traveler{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.traveler-card {
+    background-color: #1a1c23;
+    border-left: 4px solid #c8a051;
+    padding: 1rem;
+    border-radius: 4px;
+    flex: 1 1 calc(50% - 1rem);
+    min-height: 250px;
+    box-sizing: border-box;
+}
+
+.traveler-card h3{
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.traveler-card p{
+    color: #8e95ad;
+    font-size: 0.9rem;
+    margin-bottom: 0;
 }
