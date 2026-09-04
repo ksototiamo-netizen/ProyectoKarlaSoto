@@ -1,4 +1,3 @@
-// Arreglo de datos iniciales declarado directamente en el controlador
 let travelers = [
     { id: 0, name: "Skirk", email: "skirk@teyvat.com", vision: "Cryo", weapon: "Sword" },
     { id: 1, name: "Colombina ", email: "colombina@teyvat.com", vision: "Hydro", weapon: "Catalyst" },
@@ -10,7 +9,6 @@ let travelers = [
     { id: 7, name: "Flins", email: "flins@teyvat.com", vision: "Electro", weapon: "Polearm" }
 ];
 
-// A partir de aquí van tus funciones (GET, POST, PUT, DELETE)...
 //Get all travelers
 export const getTravelers = (req, res) => {
     res.json(travelers);
