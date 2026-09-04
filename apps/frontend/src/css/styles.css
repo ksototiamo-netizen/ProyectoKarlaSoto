@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #1a1c23;
+    background-color: #121318;
     color: #e0e0e0;
     min-height: 100vh;
 }
@@ -27,14 +27,15 @@ body {
 }
 
 .logo img{
-    height: 100px;
+    height: 80px;
     display: block;
 }
 
 .logo h1{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #d3bc8e;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
 }
 
 .nav ul {
@@ -75,21 +76,21 @@ body {
 }
 
 .card-section{
-    background-color: #252836;
-    border: 1px solid #3b3f54;
-    border-radius: 8px;
-    padding: 1.5rem;
+    background-color: #1e212b; 
+    border: 1px solid #2d3245;
+    border-radius: 12px; 
+    padding: 2rem;
     width: 100%;
-    box-shadow: 0 4px 10 px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
 .card-section h2{
-    color: #c8a051;
+    color: #f3d898;
     margin-bottom: 0.5rem;
 }
 
 .card-section p{
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: #a0a5ba;
 }
 
@@ -107,18 +108,21 @@ body {
 
 .form-group label{
     color: #d1d5db;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    font-weight: 600;
 }
 
-.form-group input{
-    padding: 0.6rem;
-    border-radius: 4px;
+.form-group input, .form-group select{
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
     border: 1px solid #3b3f54;
-    color: black;
+    background-color: #121318;
+    color: #ffffff;
     font-size: 1rem;
 }
 
-.form-group input:focus{
+.form-group input:focus,
+.form-group select:focus{
     outline: none;
     border-color: #c8a051;
 }
@@ -172,4 +176,23 @@ body {
     color: #8e95ad;
     font-size: 0.9rem;
     margin-bottom: 0;
+}
+
+.btn-delete {
+    background-color: transparent;
+    color: #ff5555;
+    border: 1px solid #ff5555;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease;
+    align-self: flex-end;
+}
+
+.btn-delete:hover {
+    background-color: #ff5555;
+    color: #ffffff;
 }
