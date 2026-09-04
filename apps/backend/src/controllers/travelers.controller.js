@@ -10,12 +10,12 @@ let travelers = [
 ];
 
 //Get all travelers
-export const getTravelers = (req, res) => {
+const getTravelers = (req, res) => {
     res.json(travelers);
 };
 
 //Get traveler by id
-export const getTravelerById = (req, res) => {
+const getTravelerById = (req, res) => {
     const travelerId = parseInt(req.params.id);
     const traveler = travelers.find(t => t.id === travelerId);
 
@@ -26,7 +26,7 @@ export const getTravelerById = (req, res) => {
 };
 
 //Post a new traveler
-export const createTraveler = (req, res) => {
+const createTraveler = (req, res) => {
     const { name, email, vision, weapon } = req.body;
 
     if (!name || !email ) {
@@ -46,7 +46,7 @@ export const createTraveler = (req, res) => {
 };
 
 //Put (update) a traveler
-export const updateTraveler = (req, res) => {
+const updateTraveler = (req, res) => {
     const travelerId = parseInt(req.params.id);
     const { name, email, vision, weapon } = req.body;
     const index = travelers.findIndex(t => t.id === travelerId);
@@ -60,7 +60,7 @@ export const updateTraveler = (req, res) => {
 };
 
 //Delete a traveler
-export const deleteTraveler = (req, res) => {
+const deleteTraveler = (req, res) => {
     const travelerId = parseInt(req.params.id);
     const index = travelers.findIndex(t => t.id === travelerId);
 
@@ -70,4 +70,12 @@ export const deleteTraveler = (req, res) => {
 
     travelers.splice(index, 1);
     res.status(200).json({ message: "Traveler deleted successfully" });
+};
+
+module.exports = {
+    getTravelers,
+    getTravelerById,
+    createTraveler,
+    updateTraveler,
+    deleteTraveler
 };
