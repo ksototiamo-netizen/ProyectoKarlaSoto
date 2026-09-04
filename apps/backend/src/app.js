@@ -7,6 +7,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use('/travelers', travelersRoutes);
+app.use('/api/travelers', travelersRoutes);
 
 module.exports = app;
