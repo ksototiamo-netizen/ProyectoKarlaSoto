@@ -42,7 +42,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="vision">Visión Elemnetal</label>
+                        <label for="vision">Visión Elemental</label>
                         <select id="vision" required>
                             <option value="Anemo">Anemo</option>
                             <option value="Geo">Geo</option>
@@ -72,6 +72,11 @@
             <section id="travelers" class="card-section">
                 <h2>Registro Oficial de Viajeros</h2>
                 <p>Consulta la lista de aventureros activos en Teyvat registrados actualmente</p>
+
+                <div class="search-container" style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                    <input type="number" id="search-id" placeholder="Buscar por ID (Ej. 0)" style="padding: 0.6rem; border-radius: 4px; border: 1px solid #3b3f54; background: #121318; color: white; width: 100%; max-width: 200px;">
+                    <button id="btn-buscar" class="btn-re" type="button" style="margin: 0;">Buscar ID</button>
+                </div>
                 
                 <button id="btn-cargar" class="btn-re" type="button">Obtener Aventureros</button>
                 
